@@ -1,6 +1,5 @@
 package a1;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class A1Adept {
@@ -65,7 +64,7 @@ public class A1Adept {
 			g = i;
 		}
 		
-		for (int z = 0; z < totalprice1.length; z++) {
+		for (int z = 0; z < totalprice1.length - 1; z++) {
 			if (totalprice1[z] < min)
 			{
 				min = totalprice1[z];
@@ -73,8 +72,10 @@ public class A1Adept {
 			h = z;
 		}
 		
-		System.out.println("Biggest: " + firstname[g] + " " + lastname[g] + " " + (max));
-		System.out.println("Smallest: " + firstname[h] + " " + lastname[h] + " " + (min));
+		System.out.format("Biggest: " + firstname[g] + " " + lastname[g] + " ");
+		System.out.printf("(%.2f)\n", max);
+		System.out.format("Smallest: " + firstname[h] + " " + lastname[h] + " ");
+		System.out.printf("(%.2f)\n", min);
 		for (int m = 0; m < totalprice1.length; m++) {
 			total = total + totalprice1[m];
 		}
