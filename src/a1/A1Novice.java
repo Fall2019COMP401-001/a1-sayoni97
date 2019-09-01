@@ -21,6 +21,7 @@ public class A1Novice {
 		String firstname = new String();
 		String lastname = new String();
 		String itemname = new String();
+		String decimal = new String();
 		
 		for (int i=0; i < customernumber; i++) {
 			firstname = scan.next();
@@ -32,13 +33,14 @@ public class A1Novice {
 				price = scan.nextDouble();
 				subtotalprice = price * numberofitems;
 				totalprice = totalprice + subtotalprice;
+				decimal = String.format("%.2f", totalprice);
 				/* for (int k=0; k <numberofitems; k++) {
 					totalprice = subtotalprice;
 					totalprice = Double.sum(subtotalprice, subtotalprice);					
 				} */
 			}
 			String firstletter = String.valueOf(firstname.charAt(0));
-			System.out.println(firstletter + ". " + lastname + ": " + totalprice);
+			System.out.println(firstletter + ". " + lastname + ": " + decimal);
 		}
 		
 		// everything is done so close scanner
