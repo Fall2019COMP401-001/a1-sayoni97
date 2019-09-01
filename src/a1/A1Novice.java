@@ -34,11 +34,8 @@ public class A1Novice {
 				subtotalprice = price * numberofitems;
 				totalprice = totalprice + subtotalprice;
 				decimal = String.format("%.2f", totalprice);
-				/* for (int k=0; k <numberofitems; k++) {
-					totalprice = subtotalprice;
-					totalprice = Double.sum(subtotalprice, subtotalprice);					
-				} */
 			}
+			totalprice = 0;
 			String firstletter = String.valueOf(firstname.charAt(0));
 			System.out.println(firstletter + ". " + lastname + ": " + decimal);
 		}
