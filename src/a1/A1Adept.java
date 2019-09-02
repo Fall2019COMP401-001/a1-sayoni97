@@ -60,7 +60,7 @@ public class A1Adept {
 			g = i;
 		}
 		
-		for (int z = 0; z < numberofcustomers; z++) {
+		for (int z = 0; z < numberofcustomers - 1; z++) {
 			if (totalprice1[z] < min)
 			{
 				min = totalprice1[z];
