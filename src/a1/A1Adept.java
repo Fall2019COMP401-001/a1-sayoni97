@@ -76,7 +76,7 @@ public class A1Adept {
 			total = total + totalprice1[m];
 		}
 		double average = total / totalprice1.length;	
-		System.out.println("Average: " + " (" + String.format("%.2f", average) + ")");
+		System.out.println("Average: " + " " + String.format("%.2f", average) + "");
 		
 		scan.close();
 	} 
