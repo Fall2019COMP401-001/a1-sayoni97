@@ -19,7 +19,7 @@ public class A1Adept {
 		
 		double total = 0;
 		int numberofcustomers = scan.nextInt();
-		int numberofitems;
+		int numberofitems = 0;
 		String[] firstname = new String[numberofcustomers];
 		String[] lastname = new String[numberofcustomers];
 		int g = 0;
@@ -52,7 +52,7 @@ public class A1Adept {
 		double min = totalprice1[0]; // assume first element as smallest
 		double max = totalprice1[0]; // assume first element as largest
 		
-		for (int i = 0; i < numberofcustomers - 1; i++) {
+		for (int i = 0; i < numberofcustomers; i++) {
 			if (totalprice1[i] > max)
 			{
 				max = totalprice1[i];
