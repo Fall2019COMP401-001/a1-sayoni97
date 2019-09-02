@@ -52,7 +52,7 @@ public class A1Adept {
 		double min = totalprice1[0]; // assume first element as smallest
 		double max = totalprice1[0]; // assume first element as largest
 		
-		for (int i = 0; i < totalprice1.length; i++) {
+		for (int i = 0; i < numberofcustomers; i++) {
 			if (totalprice1[i] > max)
 			{
 				max = totalprice1[i];
@@ -60,7 +60,7 @@ public class A1Adept {
 			g = i;
 		}
 		
-		for (int z = 0; z < totalprice1.length - 1; z++) {
+		for (int z = 0; z < numberofcustomers; z++) {
 			if (totalprice1[z] < min)
 			{
 				min = totalprice1[z];
