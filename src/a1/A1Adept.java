@@ -68,9 +68,9 @@ public class A1Adept {
 			h = z;
 		}
 		
-		System.out.print("Biggest: " + firstname[g] + " " + lastname[g] + " "); 
+		System.out.format("Biggest: " + firstname[g] + " " + lastname[g] + " "); 
 		System.out.printf("(%.2f)\n", max);
-		System.out.print("Smallest: " + firstname[h] + " " + lastname[h] + " ");
+		System.out.format("Smallest: " + firstname[h] + " " + lastname[h] + " ");
 		System.out.printf("(%.2f)\n", min);
 		for (int m = 0; m < totalprice1.length; m++) {
 			total = total + totalprice1[m];
