@@ -34,10 +34,10 @@ public class A1Jedi {
 				for (int k = 0; k < inventorynumber; k++) {
 					if (nameOfItem.equals(itemNames[k])) {
 						totalCount[k] = totalCount[k] + quantityOfItems;
-						if (isAdded[k] = false) {
-							totalPeople[k] = totalPeople[k] + 1;
-							isAdded[k] = true; 
-						}
+						totalPeople[k] = totalPeople[k] + 1; 
+						
+						/* while (isAdded[k] = true); */
+						
 					}
 				}
 				
@@ -50,7 +50,7 @@ public class A1Jedi {
 				System.out.println("No customers bought " + itemNames[h]);
 			}
 			if (totalCount[h] != 0) {
-				System.out.println(totalPeople[h] + " customers bought " + totalCount[h] + itemNames[h]);
+				System.out.println(totalPeople[h] + " customers bought " + totalCount[h] + " " + itemNames[h]);
 			}
 		}
 		
