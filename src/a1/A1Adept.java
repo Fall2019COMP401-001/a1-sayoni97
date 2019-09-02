@@ -24,11 +24,7 @@ public class A1Adept {
 		String[] lastname = new String[numberofcustomers];
 		int g = 0;
 		int h = 0;
-		int e;
-		int f;
 		double subtotal;
-		double highest = 0;
-		double lowest = 0;
 		double totalprice = 0;
 		double[] totalprice1 = new double[numberofcustomers];
 		double[] totals = new double[numberofcustomers];
@@ -72,15 +68,15 @@ public class A1Adept {
 			h = z;
 		}
 		
-		System.out.format("Biggest: " + firstname[g] + " " + lastname[g] + " ");
+		System.out.print("Biggest: " + firstname[g] + " " + lastname[g] + " "); 
 		System.out.printf("(%.2f)\n", max);
-		System.out.format("Smallest: " + firstname[h] + " " + lastname[h] + " ");
+		System.out.print("Smallest: " + firstname[h] + " " + lastname[h] + " ");
 		System.out.printf("(%.2f)\n", min);
 		for (int m = 0; m < totalprice1.length; m++) {
 			total = total + totalprice1[m];
 		}
 		double average = total / totalprice1.length;	
-		System.out.format("Average: %.2f", average);
+		System.out.println("Average: " + " (" + String.format("%.2f", average) + ")");
 		
 		scan.close();
 	} 
